@@ -9,7 +9,7 @@
 
 .second-nav {
     display: flex;
-    justify-content: space-between; /* or center if you adjust spacing manually */
+    justify-content: space-around; /* or center if you adjust spacing manually */
     align-items: center;
 }
 
