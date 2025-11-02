@@ -1,0 +1,47 @@
+.full-container{
+    background-color: #F7EEDE;
+}
+.first-nav{
+    font-family: "Antarcticana", sans-serif;
+    color: gray;
+    border-bottom: 1px solid black;
+}
+
+.second-nav {
+    display: flex;
+    justify-content: space-between; /* or center if you adjust spacing manually */
+    align-items: center;
+}
+
+.nav-middle {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-left,
+.nav-right {
+    flex: 1;
+}
+.nav-left ul li a{
+    text-decoration: none;
+    color: black;
+
+}
+.nav-right ul li a{
+    text-decoration: none;
+    color: black;
+
+}
+.layer-headings{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
