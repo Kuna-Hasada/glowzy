@@ -67,6 +67,35 @@
     gap: 20px;
 }
 
+
+
+/* hero section */
+
+.hero-section{
+    position: relative;
+}
+
+.layer-headings h1 {
+    font-size: clamp(1.5rem, 4vw, 3rem); 
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.layer-headings h3 {
+    font-size: clamp(1.2rem, 3vw, 2.5rem);
+    font-weight: 500;
+}
+
+
+
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
 /* menu section */
 
 .menu-section {
@@ -111,7 +140,15 @@
 .product-display .card:hover {
     transform: scale(1.01);
 }
+/* card */
+.card {
+  border-radius: 20px !important;
+  transition: 0.3s;
+}
 
+.card:hover {
+  transform: translateY(-6px);
+}
 
 /* tending section */
 
@@ -120,3 +157,4 @@
     padding-bottom: 20px;
     
 }
+

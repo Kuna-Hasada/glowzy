@@ -160,16 +160,25 @@
       }
 
       selectedProducts.forEach((prod) => {
-        const card = document.createElement("div");
-        card.classList.add("card");
-        card.style.width = "14rem";
-        card.innerHTML = `
-          <img src="${prod.img}" class="card-img-top" alt="${prod.name}">
-          <div class="card-body text-center">
-            <p class="card-text">${prod.name}</p>
-          </div>
-        `;
-        productList.appendChild(card);
-      });
+  const col = document.createElement("div");
+
+  // Bootstrap grid columns (Bento responsive)
+  col.className = "col-6 col-md-4 col-lg-3 p-2";
+
+  col.innerHTML = `
+    <div class="card h-150 p-2 shadow-sm rounded-4 overflow-hidden">
+      <img src="${prod.img}" 
+           class="card-img-top object-fit-cover" 
+           style="height: 250px;" 
+           alt="${prod.name}">
+      <div class="card-body text-center">
+        <p class="card-text fw-semibold m-0">${prod.name}</p>
+      </div>
+    </div>
+  `;
+
+  document.getElementById("product-list").appendChild(col);
+});
+
     });
   });
