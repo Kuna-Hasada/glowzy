@@ -1,3 +1,16 @@
+*{
+    
+    font-family: "Playfair", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.card-text{
+   font-family: "Amatic SC", sans-serif;
+    font-weight: 600;
+   
+    color: rgb(78, 76, 76);
+    font-style: normal;
+}
 .full-container {
     background-color: #F7EEDE;
 }
@@ -23,19 +36,20 @@
 
 .nav-left,
 .nav-right {
+    
     flex: 1;
 
 }
 
-.nav-left ul li a {
+.nav-left ul li a  {
     text-decoration: none;
-    color: black;
+    color: #494747;
 
 }
 
 .nav-right ul li a {
     text-decoration: none;
-    color: black;
+    color: #494747;
 
 }
 

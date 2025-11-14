@@ -27,4 +27,10 @@ gsap.from(".menu-item",{
 
 
 
+gsap.from(".nav-middle h2",{
+    y:-100,
+    opacity:0,
+    duration:1,
+    
+})
 
