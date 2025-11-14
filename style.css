@@ -1,16 +1,18 @@
-*{
-    
+* {
+
     font-family: "Playfair", serif;
     font-weight: 400;
     font-style: normal;
 }
-.card-text{
-   font-family: "Amatic SC", sans-serif;
+
+.card-text {
+    font-family: "Amatic SC", sans-serif;
     font-weight: 600;
-   
+
     color: rgb(78, 76, 76);
     font-style: normal;
 }
+
 .full-container {
     background-color: #F7EEDE;
 }
@@ -36,12 +38,12 @@
 
 .nav-left,
 .nav-right {
-    
+
     flex: 1;
 
 }
 
-.nav-left ul li a  {
+.nav-left ul li a {
     text-decoration: none;
     color: #494747;
 
@@ -71,12 +73,12 @@
 
 /* hero section */
 
-.hero-section{
+.hero-section {
     position: relative;
 }
 
 .layer-headings h1 {
-    font-size: clamp(1.5rem, 4vw, 3rem); 
+    font-size: clamp(1.5rem, 4vw, 3rem);
     font-weight: 700;
     letter-spacing: 2px;
 }
@@ -140,21 +142,51 @@
 .product-display .card:hover {
     transform: scale(1.01);
 }
+
 /* card */
 .card {
-  border-radius: 20px !important;
-  transition: 0.3s;
+    border-radius: 20px !important;
+    transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-6px);
+    transform: translateY(-6px);
 }
 
 /* tending section */
 
-.trending-section{
+.trending-section {
     padding-top: 50px;
     padding-bottom: 20px;
-    
+
 }
 
+/* product modal */
+#productModal h2 {
+    font-size: clamp(1.5rem, 3vw, 2.8rem);
+}
+
+#productModal h3 {
+    font-size: clamp(1.3rem, 2vw, 2rem);
+}
+
+#productModal img {
+    object-fit: contain;
+}
+
+.size-guide {
+    border-top: 1px solid #0000004d;
+}
+
+.faq,
+.size-guide {
+    border-bottom: 1px solid #0000004d;
+}
+
+.return-policy {
+    border-bottom: 1px solid #0000004d;
+}
+
+/*  */
+
+/* hide modal by default */

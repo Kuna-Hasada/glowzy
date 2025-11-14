@@ -234,6 +234,56 @@
                     </div>
                 </div>
             </section> -->
+
+            <!-- Product Modal -->
+            <div class="modal fade" id="productModal" tabindex="-1">
+                <div class="modal-dialog modal-xl modal-dialog-centered">
+                    <div class="modal-content border-0 position-relative" style="background:#DAD3C7;">
+
+                        <!-- CLOSE BUTTON -->
+                        <button type="button" class="btn-close position-absolute top-0 end-0 m-3"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+
+                        <div class="modal-body p-5">
+                            <div class="row g-5 align-items-start">
+
+                                <!-- PRODUCT IMAGE -->
+                                <div class="col-12 col-md-5 text-center">
+                                    <img id="modalImg" src="" class="img-fluid" style="max-height:400px;">
+                                </div>
+
+                                <!-- PRODUCT DETAILS -->
+                                <div class="col-12 col-md-7">
+
+                                    <h2 id="modalTitle" class="fw-bold"></h2>
+                                    <p id="modalGsm" class="text-secondary"></p>
+                                    <p id="modalColor" class="text-secondary"></p>
+                                    <h3 id="modalPrice" class="fw-bold"></h3>
+
+                                    <p id="modalDesc" class="text-secondary small"></p>
+
+                                    <!-- ACCORDION -->
+                                    <div class="mt-4">
+                                        <div class="size-guide  py-3 d-flex justify-content-between">
+                                            <span>Size Guide</span> <span>+</span>
+                                        </div>
+                                        <div class="faq border-top py-3 d-flex justify-content-between">
+                                            <span>FAQ</span> <span>+</span>
+                                        </div>
+                                        <div class="return-policy border-top  py-3 d-flex justify-content-between">
+                                            <span>Return Policy</span> <span>+</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
         </main>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
