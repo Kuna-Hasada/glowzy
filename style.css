@@ -269,8 +269,9 @@
 }
 
 /* Show content when active */
-.accordion-item.active + .accordion-content {
-    max-height: 1000px; /* large enough for any content */
+.accordion-item.active+.accordion-content {
+    max-height: 1000px;
+    /* large enough for any content */
     padding: 0.5rem 0;
 }
 
@@ -278,9 +279,26 @@
 
 
 @media (max-width: 768px) {
+    .custom-modal-content {
+        max-height: 90vh;
+        /* modal takes up to 90% of viewport height */
+        overflow-y: auto;
+        /* enable vertical scrolling */
+    }
+
     .modal-row {
         grid-template-columns: 1fr;
         /* stack on mobile */
+    }
+
+    /* Optional: smooth scrollbar */
+    .custom-modal-content::-webkit-scrollbar {
+        width: 1px;
+    }
+
+    .custom-modal-content::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 3px;
     }
 }
 
