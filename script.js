@@ -900,9 +900,11 @@ const products = {
   },
 };
 
-const productModalEl = document.getElementById("productModal");
-const productModal = new bootstrap.Modal(productModalEl);
+// GET ELEMENTS
+const productModal = document.getElementById("productModal");
+const closeBtn = productModal.querySelector(".custom-close");
 
+// OPEN MODAL FUNCTION
 document.addEventListener("click", (e) => {
   const card = e.target.closest(".product-card");
   if (!card) return;
@@ -920,8 +922,40 @@ document.addEventListener("click", (e) => {
   document.getElementById("modalDesc").textContent =
     prod.desc ?? "This is one of our best-selling products.";
 
-  productModal.show();
+  // Show modal
+  productModal.classList.add("show");
 });
+
+// CLOSE MODAL
+closeBtn.addEventListener("click", () => {
+  productModal.classList.remove("show");
+});
+
+// OPTIONAL: Close when clicking outside modal content
+productModal.addEventListener("click", (e) => {
+  if (e.target === productModal) {
+    productModal.classList.remove("show");
+  }
+});
+
+//
+
+// Accordion functionality
+const accordionItems = document.querySelectorAll(".accordion-item");
+
+accordionItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    // Toggle active class
+    item.classList.toggle("active");
+
+    // If you want only one open at a time, uncomment below:
+    // accordionItems.forEach(other => {
+    //   if(other !== item) other.classList.remove("active");
+    // });
+  });
+});
+
+//
 
 // Select menu items
 document.querySelectorAll(".menu-item").forEach((item) => {
