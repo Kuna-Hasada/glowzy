@@ -940,6 +940,29 @@ productModal.addEventListener("click", (e) => {
 
 //
 
+//
+// When switching tabs (MEN <-> WOMEN), clear product list + reset modal
+document.querySelectorAll('[data-bs-toggle="tab"]').forEach((tab) => {
+  tab.addEventListener("shown.bs.tab", () => {
+    // CLEAR PRODUCT LIST
+    document.getElementById("product-list").innerHTML = "";
+    document.getElementById("product-title").textContent = "";
+
+    // RESET MODAL CONTENT
+    document.getElementById("modalImg").src = "";
+    document.getElementById("modalTitle").textContent = "";
+    document.getElementById("modalGsm").textContent = "";
+    document.getElementById("modalColor").textContent = "";
+    document.getElementById("modalPrice").textContent = "";
+    document.getElementById("modalDesc").textContent = "";
+
+    // FORCE CLOSE THE MODAL if open
+    productModal.classList.remove("show");
+  });
+});
+
+//
+
 // Accordion functionality
 const accordionItems = document.querySelectorAll(".accordion-item");
 
