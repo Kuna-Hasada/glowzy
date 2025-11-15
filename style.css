@@ -55,6 +55,45 @@
 
 }
 
+
+/*  */
+.layer-headings {
+    text-align: center;
+    padding: 2rem;
+}
+
+.layer-headings h1 {
+ 
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin: 0;
+}
+
+.layer-headings h1 span {
+       font-family: "Amatic SC", sans-serif;
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease;
+   margin-right: 10px; 
+}
+
+.layer-headings h1 span:hover {
+    transform: translateY(-5px);
+    text-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .layer-headings h1 {
+        font-size: 2rem;
+        white-space: nowrap; 
+    }
+}
+
+/*  */
+
 .layer-headings {
     position: absolute;
     top: 50%;
