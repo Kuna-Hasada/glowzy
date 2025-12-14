@@ -978,6 +978,22 @@ accordionItems.forEach((item) => {
   });
 });
 
+// for button add to cart and buy now
+const addToCartBtn = document.getElementById("addToCartBtn");
+const buyNowBtn = document.getElementById("buyNowBtn");
+
+addToCartBtn.addEventListener("click", () => {
+    alert(`${document.getElementById("modalTitle").textContent} added to cart!`);
+    // Here you can add real cart functionality
+});
+
+buyNowBtn.addEventListener("click", () => {
+    alert(`Proceed to buy ${document.getElementById("modalTitle").textContent}`);
+    // Redirect to checkout page if needed
+});
+
+
+
 //
 
 // Select menu items
